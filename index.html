@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gamer</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Gamer</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarColor01">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Features</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search">
+				<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<div class="jumbotron  bg-secondary">
+		<h1 class="display-2 text-center">GAMER</h1>
+		<button class="btn btn-success mn" onclick="testB(this)"><h5>Click here</h5></button>
+		<hr>
+		<div class="container">
+			<h3 class="text-center"><b>Select your club to bet</b></h3>
+			<br>
+			<input type="text" class="text-muted text-center col-lg-5" id="choicePosition">
+			<!-- CHOOSING POSITION -->
+			<div class="bg-light w-75 text-center">
+				<button class="btn btn-outline-primary mychoice" id="Cup" onclick="select(this)"><img src="assets/images/Cup.png" class="mediumsize"><br>Champion</button>
+				<button class="btn btn-outline-primary mychoice" id="Real M" onclick="select(this)"><img src="assets/images/Real.png" class="mediumsize"><br> Real M</button>
+				<button class="btn btn-outline-primary mychoice" id="Barc" onclick="select(this)"><img src="assets/images/Barcelona.png" class="mediumsize"><br> Barcelona</button>
+				<button class="btn btn-outline-primary mychoice" id="Atl" onclick="select(this)"><img src="assets/images/Atletico.png" class="mediumsize"><br> Atletico M</button>
+				<button class="btn btn-outline-primary mychoice" id="Bay" onclick="select(this)"><img src="assets/images/Bayern.png" class="mediumsize"><br> Bayern M</button>
+				<button class="btn btn-outline-primary mychoice" id="Juv" onclick="select(this)"><img src="assets/images/Juventus.png" class="mediumsize"><br> Juventus</button>
+				<button class="btn btn-outline-primary mychoice" id="PSG" onclick="select(this)"><img src="assets/images/Paris.png" class="mediumsize"><br> Paris SG</button>
+				<button class="btn btn-outline-primary mychoice" id="Foot" onclick="select(this)"><img src="assets/images/Ball.png" class="mediumsize"><br> Football</button>
+			</div><br>
+
+			<button class="btn"><img src="assets/images/Green.png" height="60px" width="70px"><br> Barcelona</button>
+			<button class="btn"><img src="assets/images/Red.png" height="60px" width="70px"><br> Barcelona</button>
+		</div>
+		<hr>
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-sm-2 bg-primary">sm</div>
+				<div class="col-sm-1 border bg-success"><img src="assets/images/Juventus.png" alt="juv" class="smallsize"></div>
+				<div class="col-sm-1 border bg-info"><img src="assets/images/Real.png" class="smallsize" alt="real m"></div>
+				<div class="col-sm-1 border bg-primary"><img src="assets/images/atletico.png" class="smallsize" alt="atl"></div>
+				<div class="col-sm-1 border bg-success"><img src="assets/images/Cup.png" class="bigsize" alt="CUP"></div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Barcelona.png" class="smallsize" alt="barc"></div>
+				<div class="col-sm-1 border bg-success"><img src="assets/images/Atletico.png" class="bigsize" alt="ATL"></div>
+				<div class="col-sm-1 border bg-secondary"><img src="assets/images/Atletico.png" class="smallsize" alt="atl"></div>
+				<div class="col-sm-2 bg-primary">sm</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 bg-primary">sm</div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Bayern.png" class="bigsize" alt="BAY"></div>
+				<div class="col-sm-5">sm</div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Juventus.png" class="bigsize" alt="JUV"></div>
+				<div class="col-sm-2 bg-primary">sm</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 bg-primary">sm</div>
+				<div class="col-sm-1 border bg-danger "><img src="assets/images/Paris.png" class="smallsize" alt="psg"></div>
+				<div class="col-sm-5">sm</div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Juventus.png"  class="smallsize" alt="juv" ></div>
+				<div class="col-sm-2 bg-primary">sm</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 bg-primary">sm</div>
+				<div class="col-sm-1 border bg-danger "><img src="assets/images/Ball.png" class="bigsize" alt="BALL"></div>
+				<div class="col-sm-5">sm</div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Ball.png" class="bigsize" alt="BALL"></div>
+				<div class="col-sm-2 bg-primary">sm</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 bg-primary">sm</div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Real.png" class="smallsize" alt="real m"></div>
+				<div class="col-sm-5">sm</div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Ball.png" class="smallsize" alt="Bonus"></div>
+				<div class="col-sm-2 bg-primary">sm</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 bg-primary">sm</div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Real.png" class="bigsize" alt="REALM"></div>
+				<div class="col-sm-5">sm</div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Paris.png" class="bigsize" alt="PSG"></div>
+				<div class="col-sm-2 bg-primary">sm</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 bg-primary">sm</div>
+				<div class="col-sm-1 border bg-success"><img src="assets/images/Round.png" class="smallsize" alt="bay">SHOT</div>
+				<div class="col-sm-1 border bg-info"><img src="assets/images/Barcelona.png" class="smallsize" alt="barc"></div>
+				<div class="col-sm-1 border bg-primary"><img src="assets/images/Barcelona.png" class="bigsize" alt="BARC"></div>
+				<div class="col-sm-1 border bg-success"><img src="assets/images/Scup.png" class="bigsize" alt="cup"></div>
+				<div class="col-sm-1 border bg-danger"><img src="assets/images/Bayern.png" class="smallsize" alt="bay"></div>
+				<div class="col-sm-1 border bg-success"><img src="assets/images/Bayern.png" class="bigsize" alt="BAY"></div>
+				<div class="col-sm-1 border bg-secondary"><img src="assets/images/Paris.png" class="smallsize" alt="psg"></div>
+				<div class="col-sm-2 bg-primary">lg</div>
+			</div>
+		</div>
+		<a href="https://www.genesis-mining.com/a/2433287"><img src="http://www.genesis-mining.com/files/150x150/GM_LS-Banners_150x150px.gif">
+		</a>
+	</div>
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/fontawesome.js"></script>
+	<script type="text/javascript" src="assets/js/javascript.js"></script>
+
+
+</body>
+</html>
